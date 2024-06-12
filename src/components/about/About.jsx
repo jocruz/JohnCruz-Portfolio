@@ -40,13 +40,13 @@ const About = () => {
           </div>
 
           <p>
-            🚀 About Me Hello! I'm John, a dynamic software developer and
-            security enthusiast from Brooklyn, NYC. With a robust educational
-            foundation from Stony Brook University in Information Systems
-            Engineering, I've dived deep into the realms of Web 3 and
-            cybersecurity. As a tech wizard, I'm currently channeling my skills
-            into freelance projects with Moverz, sculpting the future of the
-            internet one Web 3 DApp at a time. My journey has spanned roles from
+            🚀 About Me Hello! I'm John, a dynamic freelance software developer
+            and security enthusiast from Brooklyn, NYC. Graduated from Stony
+            Brook University in Information Systems Engineering, I've dived deep
+            into the realms of Web 3 and cybersecurity. As a tech wizard, I'm
+            currently channeling my skills into freelance projects with Moverz a
+            start up based in Long Island, sculpting the future of the internet
+            one Web 3 DApp at a time. My journey has spanned roles from
             full-stack development to security, driven by a passion to bridge
             the evolving digital landscapes of Web 2 and Web 3.
           </p>
@@ -62,9 +62,9 @@ const About = () => {
             significant impact in the tech space.
           </p>
 
-          <a href="#contact" className="btn btn-primary">
+          {/* <a href="#contact" className="btn btn-primary">
             Let's Talk!
-          </a>
+          </a> */}
         </div>
       </div>
     </section>

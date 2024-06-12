@@ -31,7 +31,10 @@
     gap: 1rem;
     margin-bottom: 1rem;
   }
-  
+  .portfolio__item p {
+    margin-bottom: 20px; /* This adds space below the paragraph text */
+}
+
   /* ================ MEDIA QUERIES (MEDIUM DEVICES) ================= */
   @media screen and (max-width: 1024px) {
     .portfolio__container {

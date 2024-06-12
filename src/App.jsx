@@ -8,6 +8,7 @@ import Portfolio from './components/portfolio/Portfolio'
 import Testimonials from './components/testimonials/Testimonials'
 import Contact from './components/contact/Contact'
 import Footer from './components/footer/Footer'
+import ReactProjects from './components/portfolio/ReactPortfolio'
 const App = () => {
   return (
     <>
@@ -17,8 +18,9 @@ const App = () => {
       <Experience />
       <Services />
       <Portfolio />
-      <Testimonials />
-      <Contact />
+      <ReactProjects/>
+      {/* <Testimonials />
+      <Contact /> */}
       <Footer />
     </>
   )

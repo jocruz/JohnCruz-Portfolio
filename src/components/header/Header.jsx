@@ -19,7 +19,7 @@ const Header = () => {
         </div>
 
 
-        <a href="#contact" className="scrolldown">Scroll Down</a>
+        {/* <a href="#contact" className="scrolldown">Scroll Down</a> */}
       </div>
     </header>
   )

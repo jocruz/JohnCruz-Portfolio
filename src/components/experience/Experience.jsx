@@ -85,7 +85,7 @@ const Experience = () => {
               <BsPatchCheckFill className="experience__details-icon" />
               <div>
                 <h4>Project Manager</h4>
-                <small className="text-light">Managed Projects for Startups</small>
+                <small className="text-light">Managed Projects for Clients focused on Web 3</small>
               </div>
             </article>
             <article className="experience__details">
@@ -98,8 +98,8 @@ const Experience = () => {
             <article className="experience__details">
               <BsPatchCheckFill className="experience__details-icon" />
               <div>
-                <h4>SQL</h4>
-                <small className="text-light">Reviewed, debugged and modified Scripts</small>
+                <h4>Web Application Pen Testing</h4>
+                <small className="text-light">Utilized OWASP Top 10</small>
               </div>
             </article>
             <article className="experience__details">
