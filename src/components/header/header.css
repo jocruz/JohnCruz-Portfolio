@@ -1,0 +1,105 @@
+header {
+    height: 100vh;
+    padding-top: 7rem;
+    overflow: hidden;
+
+}
+
+.header__container {
+    text-align: center;
+    height: 100%;
+    position: relative;
+}
+
+/* ---------------- CTA                ----------------
+ ----------------   Call To Action    ----------------*/
+ /* This will give the call to action buttons some space and also center */
+.cta {
+    margin-top: 2.5rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+
+/* ---------------- Header Socials         ----------------
+ ----------------   This only affects the Linkedin Icon    ----------------*/
+
+ .header__socials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    position: absolute;
+    left: 0;
+    bottom: 3rem;
+ }
+
+ .header__socials::after {
+    content: '';
+    width: 1px;
+    height: 2rem;
+    background: var(--color-primary);
+
+ }
+
+
+ /* ---------------- ME image        ----------------
+ ----------------   Main header image    ----------------*/
+
+ .me {
+    background: linear-gradient(var(--color-primary), transparent);
+    width: 20rem;
+    height: 30rem;
+    position: absolute; 
+    left: calc(50% - 10rem);
+    margin-top: 4rem; /* Gives space on top away from the call to action buttons*/
+    border-radius: 12rem 12rem 0 0; /* curves the top of the div/border */
+    overflow: hidden;
+    padding: 1rem 1.5rem 1.5rem 1.5rem;  /* The padding CSS shorthand property sets the padding area on all four sides of an element at once. */
+    
+ }
+
+ .me img{
+    height: 30rem;
+ }
+
+  /* ---------------- Scroll down        ----------------
+ ----------------   This is the 'Scroll Down' text    ----------------*/
+
+ .scrolldown {
+    position: absolute;
+    right: -2.3rem;
+    bottom: 5rem;
+    transform: rotate(90deg);
+    font-weight: 400;
+    font-size: 0.9rem;
+ }
+
+
+ /*================ Media Queries for Medium Devices / tablets ================= */
+
+@media screen and (max-width: 1024px){
+    .header {
+        height: 68vh;
+    }
+    .me img{
+        height: 30rem;
+     }
+}
+
+ /*================ Media Queries for Small Devices / tablets ================= */
+
+ @media screen and (max-width: 600px){
+    .header{
+        height: 100vh;
+    }
+    .header_socials,
+    .scroll_down{
+        display:none;
+    }
+
+    .me img{
+        height: 30rem;
+     }
+}
