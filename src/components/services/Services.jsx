@@ -1,124 +1,269 @@
-import React from 'react'
-import './services.css'
-import {BiCheck} from 'react-icons/bi'
+import React from "react";
+import "./services.css";
+import { BiCheck } from "react-icons/bi";
 
 const Services = () => {
   return (
-    <section id='services'>
-      <h5>What I Offer / What I do / What You Might Need</h5>
-      <h2>Services</h2>
+    <section id="services">
+      <h5>What I Offer / My Projects / What You Might Need</h5>
+      <h2>Freelance Experience & Expertise in Development</h2>
 
       <div className="container services__container">
+        {/* Technology Stack and Projects Section */}
         <article className="service">
           <div className="service__head">
-            <h3>Mentoring</h3>
+            <h3>Technology Stack Used in Projects 🛠️</h3>
           </div>
-
-          <ul className='service__list'>
+          <ul className="service__list">
             <li>
-              <BiCheck className='service__list-icon' />
-              <p>Learn Programming fundamentals</p>
+              <BiCheck className="service__list-icon" />
+              <p>
+                Developing with React JS and TypeScript for scalable
+                applications 👨‍💻
+              </p>
             </li>
             <li>
-              <BiCheck className='service__list-icon' />
-              <p>Understand Computer Science Theory</p>
+              <BiCheck className="service__list-icon" />
+              <p>
+                Building and integrating applications using{" "}
+                <a
+                  href="https://thirdweb.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Thirdweb SDK
+                </a>{" "}
+                🌐
+              </p>
             </li>
             <li>
-              <BiCheck className='service__list-icon' />
-              <p>Feel confident picking up multiple programming languages</p>
+              <BiCheck className="service__list-icon" />
+              <p>
+                Implementing payment solutions with{" "}
+                <a
+                  href="https://stripe.com/docs/api"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Stripe API
+                </a>{" "}
+                💳
+              </p>
             </li>
             <li>
-              <BiCheck className='service__list-icon' />
-              <p>Interview Prep for Bootcamps or similar programs</p>
-            </li>
-            <li>
-              <BiCheck className='service__list-icon' />
-              <p>Career coaching; Get insight in the tech industry</p>
-            </li>
-            <li>
-              <BiCheck className='service__list-icon' />
-              <p>Meet other professionals I've mentored</p>
+              <BiCheck className="service__list-icon" />
+              <p>
+                Enhancing user experience with{" "}
+                <a
+                  href="https://docs.dynamic.xyz/introduction/welcome"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Dynamic Wallets API 🎨
+                </a>
+              </p>
             </li>
           </ul>
         </article>
-        {/* End of Mentoring Section */}
+        {/* End of Technology Stack Section */}
 
-        {/* Beginning of Web Dev Section */}
+        {/* Web 3 Development Section */}
         <article className="service">
           <div className="service__head">
-            <h3>Web 3 Development</h3>
+            <h3>Web 3 Development 🌍</h3>
           </div>
-
-          <ul className='service__list'>
+          <ul className="service__list">
             <li>
-              <BiCheck className='service__list-icon' />
-              <p>Get your NFT Collection Launched with a personilzed DAPP</p>
+              <BiCheck className="service__list-icon" />
+              <p>
+                Launch personalized DAPPs with NFT collections on Ethereum and
+                Solana blockchains 🚀
+              </p>
             </li>
             <li>
-              <BiCheck className='service__list-icon' />
-              <p>Get your 1000+ NFT Generated through scripting</p>
+              <BiCheck className="service__list-icon" />
+              <p>
+                Generate and manage 1000+ NFTs using advanced scripting,
+                including platforms like{" "}
+                <a
+                  href="https://hashlips.io/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  HashLips
+                </a>{" "}
+                and{" "}
+                <a
+                  href="https://metaplex.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Metaplex
+                </a>{" "}
+                🎨
+              </p>
             </li>
             <li>
-              <BiCheck className='service__list-icon' />
-              <p>Consultation on Web 3 Technologies and latest Web 3 Trends</p>
+              <BiCheck className="service__list-icon" />
+              <p>
+                Consultation on the latest Web 3 technologies and trends,
+                including marketplaces like{" "}
+                <a
+                  href="https://opensea.io"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  OpenSea
+                </a>{" "}
+                📈
+              </p>
             </li>
             <li>
-              <BiCheck className='service__list-icon' />
-              <p>Sites that function with the ETH BlockChain</p>
+              <BiCheck className="service__list-icon" />
+              <p>
+                Expertise in Solidity smart contracts, including{" "}
+                <a
+                  href="https://www.erc721a.org/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  ERC-721A
+                </a>
+                ,{" "}
+                <a
+                  href="https://eips.ethereum.org/EIPS/eip-1155"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  ERC-1155
+                </a>
+                , and{" "}
+                <a
+                  href="https://eips.ethereum.org/EIPS/eip-20"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  ERC-20
+                </a>{" "}
+                standards 🔗
+              </p>
             </li>
             <li>
-              <BiCheck className='service__list-icon' />
-              <p>Get your SOL Blockchain DAPP set up</p>
+              <BiCheck className="service__list-icon" />
+              <p>
+                Development and integration of smart contracts using{" "}
+                <a
+                  href="https://thirdweb.com/thirdweb.eth/TokenERC721"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Thirdweb's NFT Collection
+                </a>
+                ,{" "}
+                <a
+                  href="https://thirdweb.com/thirdweb.eth/DropERC721"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Edition Drop
+                </a>
+                , and NFT Drop contracts ⚙️
+              </p>
             </li>
             <li>
-              <BiCheck className='service__list-icon' />
-              <p>Solidity Smart Contract Research </p>
-            </li>
-            <li>
-              <BiCheck className='service__list-icon' />
-              <p>UX/UI consultation regarding DAPP user flows.</p>
+              <BiCheck className="service__list-icon" />
+              <p>
+                Design and consultation for DAPP user interfaces and
+                experiences, utilizing wallets like MetaMask and{" "}
+                <a
+                  href="https://magic.link/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Magic Wallet
+                </a>{" "}
+                🖌️ and{" "}
+                <a
+                  href="https://docs.phantom.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Phantom Wallets 👻
+                </a>
+              </p>
             </li>
           </ul>
         </article>
-        {/* End of Web Dev Section */}
+        {/* End of Web 3 Development Section */}
 
-        {/* Beginning of IT Section */}
+        {/* Consulting Services Section */}
         <article className="service">
           <div className="service__head">
-            <h3>IT Support</h3>
+            <h3>Consulting and Leadership Services 🚀</h3>
           </div>
-
-          <ul className='service__list'>
+          <ul className="service__list">
             <li>
-              <BiCheck className='service__list-icon' />
-              <p>Work with clients to build a better Computer Enviroment for productivity</p>
-            </li>
-          <li>
-              <BiCheck className='service__list-icon' />
-              <p>Computer Repair and Build Consultations</p>
+              <BiCheck className="service__list-icon" />
+              <p>
+                Led full-stack projects independently, delivering robust web and
+                Web 3 applications 🌐
+              </p>
             </li>
             <li>
-              <BiCheck className='service__list-icon' />
-              <p>Get machines up and running on any Operating Systems!</p>
+              <BiCheck className="service__list-icon" />
+              <p>
+                Strategic consulting to optimize computing environments,
+                enhancing team productivity and project efficiency 📈
+              </p>
             </li>
             <li>
-              <BiCheck className='service__list-icon' />
-              <p>Write Scripts for multiple installation of software</p>
+              <BiCheck className="service__list-icon" />
+              <p>
+                Implemented cost-saving development strategies at Moverz,
+                significantly reducing project budgets 💸
+              </p>
             </li>
             <li>
-              <BiCheck className='service__list-icon' />
-              <p>Teach Basic Internet Security</p>
+              <BiCheck className="service__list-icon" />
+              <p>
+                Mentoring an intern with a focus on hands-on project
+                involvement, fostering new talent in tech 🧑‍🏫
+              </p>
             </li>
             <li>
-              <BiCheck className='service__list-icon' />
-              <p>Build your dream PC</p>
+              <BiCheck className="service__list-icon" />
+              <p>
+                Expertise in setting up and maintaining diverse operating
+                systems, ensuring seamless workflow across platforms 🖥️
+              </p>
+            </li>
+            <li>
+              <BiCheck className="service__list-icon" />
+              <p>
+                Develop and deploy automation scripts for efficient software
+                installation and operations automation ⚙️
+              </p>
+            </li>
+            <li>
+              <BiCheck className="service__list-icon" />
+              <p>
+                Provide education on internet and data security principles,
+                enhancing organizational cyber hygiene 🔒
+              </p>
+            </li>
+            <li>
+              <BiCheck className="service__list-icon" />
+              <p>
+                Custom PC building and tech consultation tailored to specific
+                business needs and creative projects 🛠️
+              </p>
             </li>
           </ul>
         </article>
-        {/* END OF CONTENT CREATION */}
+        {/* End of Consulting Services Section */}
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Services
+export default Services;
