@@ -251,13 +251,6 @@ const Services = () => {
                 enhancing organizational cyber hygiene 🔒
               </p>
             </li>
-            <li>
-              <BiCheck className="service__list-icon" />
-              <p>
-                Custom PC building and tech consultation tailored to specific
-                business needs and creative projects 🛠️
-              </p>
-            </li>
           </ul>
         </article>
         {/* End of Consulting Services Section */}

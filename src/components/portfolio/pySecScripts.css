@@ -1,0 +1,61 @@
+.py-sec__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+  justify-content: center; /* Centers grid items horizontally when they don't fill a row */
+  align-content: center; /* Centers grid items vertically */
+  width: 100%; /* Ensures the container takes the full width of its parent */
+}
+
+  .py-sec__item {
+    background: var(--color-bg-variant);
+    padding: 1.5rem;
+    border-radius: 1rem;
+    border: 1px solid transparent;
+    transition: var(--transition);
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Centers the text within the item */
+  }
+  
+  .py-sec__item:hover {
+    border-color: var(--color-primary);
+  }
+  
+  .py-sec__item-header {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centers the header content */
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .py-sec__item-emoji {
+    font-size: 2rem;
+    margin-right: 1rem;
+  }
+  
+  .py-sec__item h3 {
+    font-size: 1.5rem;
+    color: var(--color-primary);
+    flex-grow: 1;
+    margin: 0; /* Removes default margin from the heading */
+  }
+  
+  .py-sec__item p {
+    margin-bottom: 20px;
+  }
+  
+  .py-sec__item-cta {
+    display: flex;
+    gap: 1rem;
+    justify-content: center; /* Centers the buttons/links */
+  }
+  
+  /* Responsive Adjustments */
+  @media screen and (max-width: 768px) {
+    .py-sec__container {
+      grid-template-columns: 1fr;
+    }
+  }
+  

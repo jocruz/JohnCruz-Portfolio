@@ -90,16 +90,21 @@ header {
 
  /*================ Media Queries for Small Devices / tablets ================= */
 
- @media screen and (max-width: 600px){
-    .header{
-        height: 100vh;
-    }
-    .header_socials,
-    .scroll_down{
-        display:none;
+ @media screen and (max-width: 600px) {
+    .me {
+        position: absolute; 
+        left: 50%;
+        top: 50%; /* Center vertically on the screen */
+        transform: translate(-50%, -50%); /* Ensure it's centered perfectly */
+        width: 80vw; /* Responsive width based on viewport width */
+        height: auto; /* Adjust height automatically */
+        margin-top: 1rem; /* Adjust top margin to ensure it doesn't overlap with social icons */
     }
 
-    .me img{
-        height: 30rem;
-     }
+    .me img {
+        width: 100%; /* Make sure the image fills the container */
+        height: auto; /* Adjust height automatically to maintain aspect ratio */
+    }
+
+
 }

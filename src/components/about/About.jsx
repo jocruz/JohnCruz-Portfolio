@@ -62,6 +62,19 @@ const About = () => {
             significant impact in the tech space.
           </p>
 
+          <p>
+            🏄 In this portfolio, I have three major focuses: Websites and
+            projects that I have helped clients with as a freelance
+            developer—the latest being LI Groupies, where I utilized Stripe and
+            Thirdweb to facilitate payments and interact with the EVM
+            blockchain. I also showcase my React portfolio through simple React
+            projects, and Python scripts that I've worked on as part of my
+            self-study in the cybersecurity space, where I've explored the OWASP
+            Top 10 and am currently learning about web application penetration
+            testing, including XSS, SQL injections, Command OS injections, brute
+            force, and much more.
+          </p>
+
           {/* <a href="#contact" className="btn btn-primary">
             Let's Talk!
           </a> */}
