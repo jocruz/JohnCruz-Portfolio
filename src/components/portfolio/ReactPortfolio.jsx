@@ -8,10 +8,20 @@ import birthdayBuddyImg from "../../assets/birthdaybuddy.PNG";
 import unsplashImg from "../../assets/unsplash.PNG";
 import backroadsImg from "../../assets/backroads.PNG";
 import handball from "../../assets/handball.PNG";
+import portfolioImg from "../../assets/portfolioImg.PNG"
 
 const data = [
   {
     id: 1,
+    image: portfolioImg, // Assuming you have an image named 'portfolioImg' for your portfolio
+    title: "John Cruz Portfolio",
+    description:
+      "A comprehensive showcase of my work involving Web 3 applications, Python, and cybersecurity projects",
+    github: "https://github.com/jocruz/JohnCruz-Portfolio",
+    demo: "https://www.johncruz.info/",
+  },
+  {
+    id: 2,
     image: handball,
     title: "Handball Hub - Sports Web Application",
     description:
@@ -19,7 +29,7 @@ const data = [
     github: "https://github.com/jocruz/NYCHandballNetwork",
   },
   {
-    id: 2,
+    id: 3,
     image: contentfulImg,
     title: "Contentful CMS Project Overview",
     description:
@@ -27,8 +37,9 @@ const data = [
     github: "https://github.com/jocruz/Contentful-CMS",
     demo: "https://stellular-faloodeh-f18606.netlify.app/",
   },
+  // Continue renumbering the rest of the entries similarly...
   {
-    id: 3,
+    id: 4,
     image: simplePortfolioImg,
     title: "Simple React Portfolio",
     description: "A simple React portfolio showcasing my React skills.",
@@ -36,7 +47,7 @@ const data = [
     demo: "https://thriving-salmiakki-956605.netlify.app/",
   },
   {
-    id: 4,
+    id: 5,
     image: questionsImg,
     title: "Questions App",
     description:
@@ -45,7 +56,7 @@ const data = [
     demo: "https://monumental-kleicha-160ec3.netlify.app/",
   },
   {
-    id: 5,
+    id: 6,
     image: reviewsImg,
     title: "Reviews App",
     description:
@@ -54,7 +65,7 @@ const data = [
     demo: "https://gilded-moonbeam-3d4e42.netlify.app/",
   },
   {
-    id: 6,
+    id: 7,
     image: birthdayBuddyImg,
     title: "Birthday Buddy",
     description:
@@ -63,7 +74,7 @@ const data = [
     demo: "https://rad-gecko-e00942.netlify.app/",
   },
   {
-    id: 7,
+    id: 8,
     image: unsplashImg,
     title: "Vite Unsplash",
     description:
@@ -72,7 +83,7 @@ const data = [
     demo: "https://soft-tulumba-806a9b.netlify.app/",
   },
   {
-    id: 8,
+    id: 9,
     image: backroadsImg,
     title: "Temp Backroads App",
     description:

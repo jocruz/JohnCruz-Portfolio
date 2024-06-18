@@ -5,8 +5,8 @@ import { BiCheck } from "react-icons/bi";
 const Services = () => {
   return (
     <section id="services">
-      <h5>What I Offer / My Projects / What You Might Need</h5>
-      <h2>Freelance Experience & Expertise in Development</h2>
+      <h5>Highlighting My Full Stack Development Journey</h5>
+      <h2>Proven Expertise</h2>
 
       <div className="container services__container">
         {/* Technology Stack and Projects Section */}
@@ -199,60 +199,60 @@ const Services = () => {
         {/* Consulting Services Section */}
         <article className="service">
           <div className="service__head">
-            <h3>Consulting and Leadership Services 🚀</h3>
+            <h3>Web 3 Development and Strategic Innovation 🚀</h3>
           </div>
           <ul className="service__list">
             <li>
               <BiCheck className="service__list-icon" />
               <p>
-                Led full-stack projects independently, delivering robust web and
-                Web 3 applications 🌐
+                Spearheaded the development and optimization of a cost-efficient
+                Web 3 application for Moverz, enhancing NFT minting processes
+                and smart contract management 🌐💸
               </p>
             </li>
             <li>
               <BiCheck className="service__list-icon" />
               <p>
-                Strategic consulting to optimize computing environments,
-                enhancing team productivity and project efficiency 📈
+                Conducted comprehensive research and applied cutting-edge
+                solutions in blockchain technology to drive significant cost
+                reductions and security enhancements 🔍🔗
               </p>
             </li>
             <li>
               <BiCheck className="service__list-icon" />
               <p>
-                Implemented cost-saving development strategies at Moverz,
-                significantly reducing project budgets 💸
+                Provided expert on-site support and client education for Web 3
+                wallet integration and troubleshooting, ensuring high customer
+                satisfaction and smoother operations 🛠️👥
               </p>
             </li>
             <li>
               <BiCheck className="service__list-icon" />
               <p>
-                Mentoring an intern with a focus on hands-on project
-                involvement, fostering new talent in tech 🧑‍🏫
+                Engaged actively in leading Web 3 developer communities to stay
+                abreast of industry trends and technologies, applying insights
+                to deliver state-of-the-art solutions 🌍📡
               </p>
             </li>
             <li>
               <BiCheck className="service__list-icon" />
               <p>
-                Expertise in setting up and maintaining diverse operating
-                systems, ensuring seamless workflow across platforms 🖥️
+                Collaborated with marketing and technical teams to streamline
+                operations and enhance ticket sales through strategic use of
+                blockchain technology 📊🎟️
               </p>
             </li>
             <li>
               <BiCheck className="service__list-icon" />
               <p>
-                Develop and deploy automation scripts for efficient software
-                installation and operations automation ⚙️
-              </p>
-            </li>
-            <li>
-              <BiCheck className="service__list-icon" />
-              <p>
-                Provide education on internet and data security principles,
-                enhancing organizational cyber hygiene 🔒
+                Mentored team members and supported the integration of
+                automation tools, fostering a culture of innovation and
+                continuous improvement in technology deployment 🧑‍🏫⚙️
               </p>
             </li>
           </ul>
         </article>
+
         {/* End of Consulting Services Section */}
       </div>
     </section>

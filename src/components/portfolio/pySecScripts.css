@@ -51,6 +51,12 @@
     gap: 1rem;
     justify-content: center; /* Centers the buttons/links */
   }
+  .portfolio-description {
+    text-align: center; /* Centers the text */
+    margin-bottom: 20px; /* Adds space below the paragraph text */
+    color: var(--text-color); /* Adjusts the text color if needed */
+  }
+  
   
   /* Responsive Adjustments */
   @media screen and (max-width: 768px) {
