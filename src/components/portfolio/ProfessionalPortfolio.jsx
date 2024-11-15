@@ -3,7 +3,7 @@ import "./portfolio.css";
 import IMG1 from "../../assets/portfolio1.png"; // Update with your actual image paths
 import IMG2 from "../../assets/portfolio2.png";
 import IMG3 from "../../assets/portfolio3.png";
-import IMG4 from "../../assets/portfolio4.png";
+import IMG4 from "../../assets/portfolio4.PNG";
 import IMG5 from "../../assets/portfolio5.png";
 import IMG6 from "../../assets/portfolio6.png";
 import { FaCalendarAlt, FaTools } from "react-icons/fa";
