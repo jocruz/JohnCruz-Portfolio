@@ -22,13 +22,13 @@ const ProfileTabs = () => {
     className={activeTab === 'experience' ? 'active' : ''}
     onClick={() => setActiveTab('experience')}
   >
-    Experience
+    Skills
   </button>
   <button
     className={activeTab === 'services' ? 'active' : ''}
     onClick={() => setActiveTab('services')}
   >
-    Services
+    Development Journey & Expertise
   </button>
 </div>
 
