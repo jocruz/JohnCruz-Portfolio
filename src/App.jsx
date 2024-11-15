@@ -1,25 +1,23 @@
 import React from "react";
 import Header from "./components/header/Header";
 import Nav from "./components/nav/Nav";
-import About from "./components/about/About";
-import Experience from "./components/experience/Experience";
-import Services from "./components/services/Services";
+// import About from "./components/about/About";
+// import Experience from "./components/experience/Experience";
+// import Services from "./components/services/Services";
 import Portfolio from "./components/portfolio/Portfolio";
 import Footer from "./components/footer/Footer";
-import ReactProjects from "./components/portfolio/ReactPortfolio";
-import PySecProjects from "./components/portfolio/PythonPortfolio";
+import ProfileTabs from "./components/profile/ProfileTabs"
 
 const App = () => {
   return (
     <>
       <Header />
       <Nav />
-      <About />
+      <ProfileTabs />
+      {/* <About />
       <Experience />
-      <Services />
+      <Services /> */}
       <Portfolio />
-      <PySecProjects />
-      <ReactProjects />
       <Footer />
     </>
   );

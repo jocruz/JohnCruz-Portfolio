@@ -6,7 +6,7 @@ const data = [
     id: 1,
     title: "SSH Brute Force Script",
     description:
-      "This script automates the process of attempting to log into an SSH server using a list of common passwords. It is intended to help identify weak passwords and demonstrate the importance of robust security policies in SSH environments.",
+      "Automates SSH login attempts using a list of common passwords to test for weak credential configurations. This tool demonstrates the importance of enforcing strong password policies and secure SSH access controls.",
     github:
       "https://github.com/jocruz/PySecScripts/tree/main/Brute%20Force%20SSH%20Script",
     emoji: "🔑",
@@ -15,23 +15,23 @@ const data = [
     id: 2,
     title: "SHA-256 Hash Cracker Tool",
     description:
-      "This tool is designed to perform brute-force attacks against SHA-256 hashed passwords to identify the plaintext password from a hashed version using a common wordlist. It highlights the importance of robust encryption methods and the risks associated with weak cryptographic practices.",
+      "Performs brute-force attacks on SHA-256 hashed passwords using a wordlist to simulate password cracking techniques. Highlights the need for secure hashing practices to protect sensitive data.",
     github: "https://github.com/jocruz/PySecScripts/tree/main/SHA256-Crack",
     emoji: "🔒",
   },
   {
     id: 3,
-    title: "Username and Password Brute Forcer Tool",
+    title: "Username and Password Brute Forcer",
     description:
-      "This Python script automates testing common usernames and passwords against web-based login forms to detect weak credentials. It demonstrates the ease with which common credentials can be exploited and underscores the need for stronger authentication mechanisms.",
+      "Tests common username-password combinations against web-based login forms to identify weak authentication setups. This tool underscores the importance of secure login practices and password complexity.",
     github: "https://github.com/jocruz/PySecScripts/tree/main/Web-Brute",
     emoji: "🚪",
   },
   {
     id: 4,
-    title: "SQL Injection Tool",
+    title: "SQL Injection Testing Tool",
     description:
-      "This tool facilitates testing SQL Injection vulnerabilities in web applications. It can help identify potential entry points for SQL Injection attacks, highlighting the need for secure coding practices.",
+      "Detects potential SQL injection vulnerabilities in web applications by testing for unsanitized inputs. This tool emphasizes the importance of secure coding practices to prevent database exploitation.",
     github: "https://github.com/jocruz/PySecScripts/tree/main/SQL-Injection",
     emoji: "💉",
   },
@@ -40,20 +40,15 @@ const data = [
 const PySecProjects = () => {
   return (
     <section id="py-sec-projects">
-      <h5>My Python Security Projects/Scripts</h5>
+      <h5>My Python Security Projects</h5>
       <h2>PySecScripts Portfolio</h2>
+      <p className="portfolio-intro">
+  This portfolio showcases Python scripts I developed to practice security automation, including tasks like 
+  brute-force testing, password cracking, and vulnerability scanning. Each project reflects my application of 
+  programming fundamentals to real-world cybersecurity challenges.
+</p>
 
-      <p class="portfolio-description">
-        As part of my continuous self-development in cybersecurity, I have
-        undertaken a comprehensive course with TCM Security to study Web
-        Application Penetration Testing. 
-      </p>
-      <p class="portfolio-description">
-        This motivated me to leverage my coding skills in Python to develop
-        various scripts that not only demonstrate my coding ability but also
-        enhance my understanding of security vulnerabilities.
-      </p>
-      <div className="container py-sec__container">
+      <div className="py-sec__container">
         {data.map(({ id, title, description, github, emoji }) => (
           <article key={id} className="py-sec__item">
             <div className="py-sec__item-header">
@@ -63,7 +58,12 @@ const PySecProjects = () => {
             <p>{description}</p>
             <div className="py-sec__item-cta">
               {github && (
-                <a href={github} className="btn" target="_blank">
+                <a
+                  href={github}
+                  className="btn"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   GitHub
                 </a>
               )}

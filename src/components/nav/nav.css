@@ -33,3 +33,9 @@ nav a.active {
     background: var(--color-bg);
     color:rgb(216,190,204);
 }
+
+nav a span {
+    font-size: 0.8rem;
+    margin-top: 0.1rem;
+    margin-left: 0.8rem;
+  }

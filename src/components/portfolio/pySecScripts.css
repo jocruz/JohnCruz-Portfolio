@@ -1,67 +1,112 @@
+/* Container Styling */
 .py-sec__container {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 1.5rem;
+  display: flex; /* Use flexbox for horizontal layout */
+  flex-wrap: wrap; /* Allow wrapping if necessary */
+  justify-content: center; /* Center all items horizontally */
+  align-items: center; /* Center all items vertically */
+  gap: 1.5rem; /* Add space between cards */
   padding: 2rem;
-  justify-content: center; /* Centers grid items horizontally when they don't fill a row */
-  align-content: center; /* Centers grid items vertically */
-  width: 100%; /* Ensures the container takes the full width of its parent */
+  width: 100%;
 }
 
+/* Individual Project Item Styling */
+.py-sec__item {
+  background: var(--color-bg-variant);
+  padding: 1.5rem;
+  border-radius: 1rem;
+  border: 1px solid transparent;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Softer shadow */
+  text-align: center;
+  flex: 0 0 280px; /* Ensure consistent width for each card */
+  max-width: 300px; /* Prevent cards from stretching */
+}
+
+.py-sec__item:hover {
+  border-color: var(--color-primary);
+  transform: scale(1.05); /* Subtle zoom effect */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Header and Emoji Styling */
+.py-sec__item-header {
+  display: flex;
+  flex-direction: column; /* Stack emoji and title vertically */
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: var(--color-primary);
+  margin-bottom: 1rem;
+}
+
+.py-sec__item-emoji {
+  font-size: 2.5rem; /* Slightly larger for better emphasis */
+  margin-bottom: 0.5rem;
+}
+
+/* Title Styling */
+.py-sec__item h3 {
+  font-size: 1.2rem;
+  color: var(--color-primary);
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+/* Description Styling */
+.py-sec__item p {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: var(--text-color);
+  margin-bottom: 1rem;
+  text-align: center; /* Centers description text */
+}
+
+/* Call-to-Action Buttons */
+.py-sec__item-cta a {
+  display: inline-block;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  font-size: 0.9rem;
+  color: #fff;
+  background-color: var(--color-primary);
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.py-sec__item-cta a:hover {
+  background-color: var(--color-primary-dark);
+  transform: translateY(-2px);
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+  .py-sec__container {
+    flex-wrap: wrap; /* Ensure items wrap on smaller screens */
+  }
+
   .py-sec__item {
-    background: var(--color-bg-variant);
-    padding: 1.5rem;
-    border-radius: 1rem;
-    border: 1px solid transparent;
-    transition: var(--transition);
-    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
-    text-align: center; /* Centers the text within the item */
+    flex: 0 0 calc(50% - 1rem); /* Two items per row */
   }
-  
-  .py-sec__item:hover {
-    border-color: var(--color-primary);
+}
+
+@media screen and (max-width: 480px) {
+  .py-sec__container {
+    flex-wrap: wrap; /* Ensure items wrap */
   }
-  
-  .py-sec__item-header {
-    display: flex;
-    align-items: center;
-    justify-content: center; /* Centers the header content */
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
+
+  .py-sec__item {
+    flex: 0 0 100%; /* Single column on very small screens */
+    max-width: 100%; /* Full width */
   }
-  
-  .py-sec__item-emoji {
-    font-size: 2rem;
-    margin-right: 1rem;
-  }
-  
-  .py-sec__item h3 {
-    font-size: 1.5rem;
-    color: var(--color-primary);
-    flex-grow: 1;
-    margin: 0; /* Removes default margin from the heading */
-  }
-  
-  .py-sec__item p {
-    margin-bottom: 20px;
-  }
-  
-  .py-sec__item-cta {
-    display: flex;
-    gap: 1rem;
-    justify-content: center; /* Centers the buttons/links */
-  }
-  .portfolio-description {
-    text-align: center; /* Centers the text */
-    margin-bottom: 20px; /* Adds space below the paragraph text */
-    color: var(--text-color); /* Adjusts the text color if needed */
-  }
-  
-  
-  /* Responsive Adjustments */
-  @media screen and (max-width: 768px) {
-    .py-sec__container {
-      grid-template-columns: 1fr;
-    }
-  }
-  
+}
+
+.portfolio-intro {
+  text-align: center; /* Center-align the text */
+  font-size: 1rem; /* Standard font size */
+  line-height: 1.6; /* Enhance readability */
+  color: var(--text-color); /* Match your theme's text color */
+  margin-bottom: 2rem; /* Add space below */
+  max-width: 700px; /* Keep the text width manageable */
+  margin: 0 auto; /* Center the text block */
+}

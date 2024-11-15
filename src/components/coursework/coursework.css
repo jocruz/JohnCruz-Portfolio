@@ -1,0 +1,92 @@
+.coursework__container {
+    padding: 2rem;
+    margin: 0 auto;
+    max-width: 800px;
+    background: var(--color-bg-variant);
+    border-radius: 1rem;
+    text-align: center;
+  }
+  
+  .coursework__container h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    color: var(--color-primary);
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    text-align: center;
+  }
+  
+  /* List Styling */
+  .coursework__list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Individual Course Item */
+  .coursework__item {
+    width: 100%;
+    background: var(--color-bg);
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  /* Badge Image Styling */
+  .coursework__badge-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .coursework__badge {
+    width: 100px;
+    height: auto;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Title and Description */
+  .coursework__item h4 {
+    font-size: 1.3rem;
+    color: var(--color-primary);
+    margin: 0.5rem 0;
+  }
+  
+  .coursework__item p {
+    color: var(--text-secondary);
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Link Button Styling */
+  .coursework__links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .coursework__links a,
+  .coursework__item a.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    color: #fff;
+    background-color: var(--color-primary);
+    padding: 0.5rem 1rem;
+    border-radius: 0.3rem;
+    text-decoration: none;
+    transition: background 0.3s;
+  }
+  
+  .coursework__links a:hover {
+    background-color: var(--color-primary-dark);
+  }
+  

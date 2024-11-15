@@ -1,0 +1,93 @@
+/* Center the entire certifications container */
+.certifications__container {
+    padding: 2rem;
+    margin: 0 auto;
+    max-width: 800px; /* Limit the width for better readability */
+    background: var(--color-bg-variant);
+    border-radius: 1rem;
+    text-align: center; /* Center text and elements */
+  }
+  
+  /* Section Headers */
+  .certifications__container h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    color: var(--color-primary);
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    text-align: center;
+  }
+  
+  /* List Styling */
+  .certifications__list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center-align list items */
+  }
+  
+  .certifications__item {
+    width: 100%; /* Take full width within max-width of container */
+    background: var(--color-bg);
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Centers-align text within each item for readability */
+  }
+  
+  /* Title and Description */
+  .certifications__item h4 {
+    font-size: 1.3rem;
+    margin: 0.5rem 0;
+    color: var(--color-primary);
+    text-align: center;
+  }
+  
+  .certifications__item p {
+    color: var(--text-secondary);
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Links for PDF and URL */
+  .certifications__links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem; /* Add spacing between links */
+    margin-top: 1rem;
+  }
+  
+  .certifications__links a,
+  .certifications__item a.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    color: #fff;
+    background-color: var(--color-primary);
+    padding: 0.5rem 1rem;
+    border-radius: 0.3rem;
+    text-decoration: none;
+    transition: background 0.3s;
+  }
+  
+  .certifications__links a:hover {
+    background-color: var(--color-primary-dark);
+  }
+  
+  .certifications__badge-container {
+    display: flex;
+    justify-content: center; /* Centers the image horizontally */
+    align-items: center; /* Centers the image vertically */
+    margin-bottom: 1rem; /* Adds spacing below the badge */
+  }
+  
+  .certifications__badge {
+    width: 100px; /* Adjust the size of the badge as needed */
+    height: auto;
+    border-radius: 0.5rem; /* Optional: Adds slight rounding to the badge edges */
+  }
+  
+  

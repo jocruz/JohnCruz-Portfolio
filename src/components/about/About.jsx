@@ -8,13 +8,13 @@ import { VscFolderLibrary } from "react-icons/vsc";
 const About = () => {
   return (
     <section id="about">
-      <h5>Get To Know </h5>
+      <h5>Let Me Share Something... </h5>
       <h2>About Me </h2>
 
       <div className="container about__container">
         <div className="about__me">
           <div className="about__me-image">
-            <img src={ME} alt="About Image" />
+            <img src={ME} alt="About" />
           </div>
         </div>
 
@@ -47,37 +47,32 @@ const About = () => {
             currently channeling my skills into freelance projects with Moverz a
             start up based in Long Island, sculpting the future of the internet
             one Web 3 DApp at a time. My journey has spanned roles from
-            full-stack development to security, driven by a passion to bridge
-            the evolving digital landscapes of Web 2 and Web 3.
+            full-stack development to Technical Analysis to Tech Support and
+            more! I am driven by a passion to bridge the evolving digital
+            landscapes of Web 2 and Web 3.
           </p>
           <p>
-            🌟 What I'm Up To I've recently aced my Sec+ 701, and I'm on a quest
-            to blend the worlds of security and development. My current projects
-            range from integrating Stripe for seamless NFT transactions to
-            crafting comprehensive web applications like the Handball Hub.
-            Whether it's mentoring budding developers or tackling the next
-            security challenge, I'm all about pushing the envelope and preparing
-            for the tech shifts on the horizon. Connect with me as I navigate
-            the exciting intersection of creation and security, aiming to make a
-            significant impact in the tech space.
+            🌟 Here’s a more concise and professional revision of your updated
+            text: I have successfully earned my Sec+ 701 and TCM Security PJWT
+            (Practical Junior Web Tester) certifications and am currently
+            pursuing the TCM Security PJPT (Practical Junior Penetration
+            Tester), which emphasizes Active Directory network penetration
+            testing. My long-term goal is to achieve the TCM Security PWPT
+            (Practical Web Penetration Tester) certification to deepen my
+            expertise in web application penetration testing, aligning with my
+            niche in cybersecurity.
           </p>
 
           <p>
-            🏄 In this portfolio, I have three major focuses: Websites and
-            projects that I have helped clients with as a freelance
-            developer—the latest being LI Groupies, where I utilized Stripe and
-            Thirdweb to facilitate payments and interact with the EVM
-            blockchain. I also showcase my React portfolio through simple React
-            projects, and Python scripts that I've worked on as part of my
-            self-study in the cybersecurity space, where I've explored the OWASP
-            Top 10 and am currently learning about web application penetration
-            testing, including XSS, SQL injections, Command OS injections, brute
-            force, and much more.
+            🏄In this portfolio, I showcase my TCM Security certifications and
+            coursework, which form the foundation of my cybersecurity training.
+            I also highlight my paid Web 3 projects, completed through Moverz
+            Media, which collectively generated over $100,000 in revenue for
+            clients. Additionally, I include my Java projects, developed during
+            my academic journey to enhance my understanding of data structures
+            and algorithms, as well as my React projects, which demonstrate my
+            front-end development expertise.
           </p>
-
-          {/* <a href="#contact" className="btn btn-primary">
-            Let's Talk!
-          </a> */}
         </div>
       </div>
     </section>

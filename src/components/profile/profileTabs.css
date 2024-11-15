@@ -1,0 +1,34 @@
+/* Updated class names to avoid conflict */
+.profile-tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .profile-tabs button {
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: var(--color-bg-variant);
+    color: var(--text-color);
+    cursor: pointer;
+    border-radius: 0.5rem;
+    margin: 0 0.5rem;
+    transition: background-color 0.3s;
+    font-size: large;
+  }
+  
+  .profile-tabs button.active {
+    background-color: var(--color-primary);
+    color: #fff;
+  }
+  
+  .profile-tabs button:hover {
+    background-color: var(--color-primary-light);
+  }
+  
+  .profile-tab-content {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+  

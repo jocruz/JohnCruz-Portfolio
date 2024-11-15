@@ -1,0 +1,89 @@
+/* Container Styling */
+.java__container {
+    display: flex;
+    flex-wrap: wrap; /* Allow projects to wrap to the next line */
+    justify-content: center; /* Center projects horizontally */
+    gap: 1.5rem; /* Add space between project cards */
+    padding: 2rem;
+    width: 100%;
+  }
+  
+  /* Individual Project Item Styling */
+  .java__item {
+    background: var(--color-bg-variant);
+    padding: 1.5rem;
+    border-radius: 1rem;
+    border: 1px solid transparent;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow for better visuals */
+    text-align: center;
+    flex: 0 0 calc(33% - 2rem); /* Three cards per row */
+    max-width: 300px; /* Limit max width for uniformity */
+  }
+  
+  .java__item:hover {
+    border-color: var(--color-primary);
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Title Styling */
+  .java__item h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: var(--color-primary);
+  }
+  
+  /* Description Styling */
+  .java__item p {
+    font-size: 0.9rem;
+    color: var(--text-color);
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Button Styling */
+  .java__item a.btn {
+    display: inline-block;
+    padding: 0.5rem 1.5rem;
+    background: var(--color-primary);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    transition: background 0.3s ease;
+  }
+  
+  .java__item a.btn:hover {
+    background: var(--color-primary-dark);
+  }
+  
+  /* Responsive Adjustments */
+  @media screen and (max-width: 768px) {
+    .java__item {
+      flex: 0 0 calc(50% - 1rem); /* Two cards per row on medium screens */
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .java__item {
+      flex: 0 0 100%; /* Single card per row on small screens */
+    }
+  }
+  /* Centering and Styling the Description */
+.java-portfolio-description {
+    text-align: center; /* Center-align the text */
+    font-size: 1rem; /* Standard font size */
+    line-height: 1.6; /* Enhance readability */
+    color: var(--text-color); /* Match your theme's text color */
+    margin-bottom: 2rem; /* Add space below */
+    max-width: 700px; /* Keep the text width manageable */
+    margin: 0 auto; /* Center the text block */
+  }
+  
+  .java-portfolio-description p {
+    font-size: 1rem; /* Slightly larger font for readability */
+    line-height: 1.6; /* Improve line spacing for clarity */
+    color: var(--text-color); /* Use a softer text color for better contrast */
+    max-width: 800px; /* Limit width to avoid overly stretched lines */
+    margin: 0 auto; /* Center-align the paragraph block */
+    font-family: 'Roboto', sans-serif; /* Use a professional font for clean design */
+  }
