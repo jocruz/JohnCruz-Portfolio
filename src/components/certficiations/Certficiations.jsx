@@ -10,7 +10,7 @@ const certifications = [
     title: 'CompTIA Security+ (SY0-701)',
     issuer: 'CompTIA',
     date: 'Issued 04/05/2024',
-    url: 'https://www.yourcertificationurl.com',
+    url: 'https://www.credly.com/badges/7d06c8d7-ce80-4094-b87d-4ddced0d0bce/public_url',
     description: 'Covered essential security concepts such as network security, cryptography, and risk management.',
     logo: csLogo, // Reference to the CompTIA badge
   },
@@ -19,7 +19,7 @@ const certifications = [
     title: 'Practical Junior Web Tester (PJWT)',
     issuer: 'TCM Security',
     date: 'Issued 07/03/2024',
-    url: 'https://www.yourcertificationurl.com',
+    url: 'https://certified.tcm-sec.com/4a803568-86d5-4150-924f-9cc6173eff74?key=a2d2b570e775b4a2f78622e7443351b05e021fcc03edfc9961ad3456ae9a1f8a&record_view=true#acc.YxCUh6Fi',
     description: 'Focused on hands-on penetration testing for web applications, including reconnaissance and exploitation.',
     logo: pjwtLogo, // Reference to the PJWT badge
   },

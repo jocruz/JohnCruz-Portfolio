@@ -30,7 +30,7 @@ const Portfolio = () => {
           className={activeTab === "professionalprojects" ? "active" : ""}
           onClick={() => setActiveTab("professionalprojects")}
         >
-          Professional Projects
+          Paid Development Projects
         </button>
         <button
           className={activeTab === "pysec" ? "active" : ""}
