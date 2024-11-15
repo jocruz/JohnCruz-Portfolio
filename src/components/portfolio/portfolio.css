@@ -1,123 +1,108 @@
 .portfolio__container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2.5rem;
-  }
-  
-  .portfolio__item {
-    background: var(--color-bg-variant);
-    padding: 1.2rem;
-    border-radius: 2rem;
-    border: 1px solid transparent;
-    transition: var(--transition);
-  }
-  
-  .portfolio__item:hover {
-    border-color: var(--color-primary-variant);
-    background: transparent;
-  }
-  
-  .portfolio__item-image {
-    border-radius: 1.5rem;
-    overflow: hidden;
-  }
-  
- /* Emphasis for date, metrics, and technologies */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+}
+
+.portfolio__item {
+  background: var(--color-bg-variant);
+  padding: 1.2rem;
+  border-radius: 2rem;
+  border: 1px solid transparent;
+  transition: var(--transition);
+}
+
+.portfolio__item:hover {
+  border-color: var(--color-primary-variant);
+  background: transparent;
+}
+
+.portfolio__item-image {
+  border-radius: 1.5rem;
+  overflow: hidden;
+}
+
+/* Emphasis for date, metrics, and technologies */
 .portfolio__item h3 {
   font-size: 1.3rem;
   margin-top: 1rem;
   color: var(--color-primary);
 }
-  
-  .portfolio__item-cta {
-    display: flex;
-    gap: 1rem;
-    margin-bottom: 1rem;
-  }
 
-  .portfolio__item p {
-    margin: 0.5rem 0;
-    color: var(--text-secondary);
-  }
-
-  .portfolio__item p strong {
-    color: var(--color-primary); /* Optional: Makes labels like "Date" stand out */
-    font-weight: bold;
-  }
-
-  .portfolio__item-cta {
-    display: flex;
-    gap: 1rem;
-    justify-content: center;
-    margin-top: 1rem;
-  }
-  .portfolio-description {
-  text-align: center; /* Centers the text */
-  margin-bottom: 20px; /* Adds space below the paragraph text */
-  color: var(--text-color); /* Adjusts the text color if needed */
+.portfolio__item-cta {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
 }
 
-  
+.portfolio__item p {
+  margin: 0.5rem 0;
+  color: var(--text-secondary);
+}
 
-  /* ================ MEDIA QUERIES (MEDIUM DEVICES) ================= */
-  @media screen and (max-width: 1024px) {
-    .portfolio__container {
-      grid-template-columns: 1fr 1fr;
-      gap: 1.2rem;
-    }
-  }
-  
-  /* ================ MEDIA QUERIES (SMALL DEVICES) ================= */
-  @media screen and (max-width: 600px) {
-    .portfolio__container {
-      grid-template-columns: 1fr;
-      gap: 1rem;
-    }
-  }
-  
+.portfolio__item p strong {
+  color: var(--color-primary);
+  font-weight: bold;
+}
 
-  .tabs {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 1.5rem;
-  }
-  
-  .tabs button {
-    padding: 0.5rem 1rem;
-    border: none;
-    background-color: var(--color-bg-variant);
-    color: var(--text-color);
-    cursor: pointer;
-    border-radius: 0.5rem;
-    margin: 0 0.5rem;
-    transition: background-color 0.3s;
-    font-size: large;
-  }
-  
-  .tabs button.active {
-    background-color: var(--color-primary);
-    color: #fff;
-  }
-  
-  .tabs button:hover {
-    background-color: var(--color-primary-light);
-  }
-  
-  .tab-content {
-    display: flex;
-    justify-content: center;
-    margin-top: 1rem;
-  }
+.portfolio__item-cta {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.portfolio-description {
+  text-align: center;
+  margin-bottom: 20px;
+  color: var(--text-color);
+}
+
+/* Tabs */
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.tabs button {
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: var(--color-bg-variant);
+  color: var(--text-color);
+  cursor: pointer;
+  border-radius: 0.5rem;
+  margin: 0 0.5rem;
+  transition: background-color 0.3s;
+  font-size: large;
+}
+
+.tabs button.active {
+  background-color: var(--color-primary);
+  color: #fff;
+}
+
+.tabs button:hover {
+  background-color: var(--color-primary-light);
+}
+
+.tab-content {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
 
 /* Container and Card Styles */
-.portfolio__container, .py-sec__container {
+.portfolio__container,
+.py-sec__container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 1.5rem;
   padding: 1rem;
 }
 
-.portfolio__item, .py-sec__item {
+.portfolio__item,
+.py-sec__item {
   background: var(--color-bg-variant);
   padding: 1.5rem;
   border-radius: 1rem;
@@ -127,13 +112,15 @@
   text-align: center;
 }
 
-.portfolio__item:hover, .py-sec__item:hover {
+.portfolio__item:hover,
+.py-sec__item:hover {
   border-color: var(--color-primary);
   transform: translateY(-5px);
 }
 
 /* Project Image */
-.portfolio__item-image, .py-sec__item-image {
+.portfolio__item-image,
+.py-sec__item-image {
   max-width: 100%;
   height: auto;
   border-radius: 1rem;
@@ -141,26 +128,73 @@
   margin-bottom: 1rem;
 }
 
-.portfolio__item h3, .py-sec__item h3 {
+.portfolio__item h3,
+.py-sec__item h3 {
   font-size: 1.2rem;
   margin: 1rem 0;
   color: var(--text-color);
 }
 
-.portfolio__item p, .py-sec__item p {
+.portfolio__item p,
+.py-sec__item p {
   color: var(--text-secondary);
   margin-bottom: 1rem;
 }
 
 /* CTA Buttons */
-.portfolio__item-cta, .py-sec__item-cta {
+.portfolio__item-cta,
+.py-sec__item-cta {
   display: flex;
   gap: 0.5rem;
   justify-content: center;
 }
 
-.portfolio__item-cta .btn, .py-sec__item-cta .btn {
+.portfolio__item-cta .btn,
+.py-sec__item-cta .btn {
   padding: 0.5rem 1rem;
   font-size: 0.9rem;
   border-radius: 5px;
+}
+
+/* Media Queries for Responsive Design */
+/* Medium Devices */
+@media screen and (max-width: 1024px) {
+  .portfolio__container {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+  }
+
+  .tabs button {
+    font-size: medium;
+  }
+}
+
+/* Small Devices (iPhone 13 Pro Max and similar) */
+@media screen and (max-width: 600px) {
+  .portfolio__container {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .portfolio__item {
+    padding: 1rem;
+  }
+
+  .portfolio__item h3 {
+    font-size: 1.1rem;
+  }
+
+  .portfolio__item p {
+    font-size: 0.9rem;
+  }
+
+  .portfolio__item-cta .btn {
+    font-size: 0.85rem;
+  }
+
+  .tabs button {
+    font-size: small;
+    padding: 0.5rem;
+    margin: 0 0.3rem;
+  }
 }
