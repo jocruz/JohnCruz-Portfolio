@@ -99,9 +99,8 @@ const ReactProjects = () => {
       <h5>My React Projects</h5>
       <h2>React Projects Portfolio</h2>
       <p className="portfolio-intro">
-  This portfolio highlights my journey in React development, featuring projects that demonstrate skills in state management, responsive design, API integration, and modern frontend architecture. Each project reflects my ability to build dynamic and user-centric web applications.
+  This portfolio highlights my learning journey in React development, featuring projects that demonstrate skills in state management, responsive design, API integration, and modern frontend architecture. Each project reflects my ability to build dynamic and user-centric web applications.
 </p>
-
       <div className="container portfolio__container">
         {data.map(({ id, image, title, description, github, demo }) => {
           return (
