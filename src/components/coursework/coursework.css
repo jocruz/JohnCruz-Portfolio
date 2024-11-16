@@ -1,7 +1,7 @@
 .coursework__container {
-  padding: 2rem;
+  padding: 1.5rem; /* Reduced padding for smaller screens */
   margin: 0 auto;
-  max-width: 800px;
+  max-width: 95%; /* Ensures the container fits smaller screens */
   background: var(--color-bg-variant);
   border-radius: 1rem;
   text-align: center;
@@ -13,7 +13,7 @@
   justify-content: center;
   gap: 0.5rem;
   color: var(--color-primary);
-  font-size: 1.5rem;
+  font-size: 1.3rem; /* Adjusted font size for better readability */
   margin-top: 1rem;
   text-align: center;
 }
@@ -31,7 +31,7 @@
 .coursework__item {
   width: 100%;
   background: var(--color-bg);
-  padding: 1.5rem;
+  padding: 1rem; /* Reduced padding */
   border-radius: 0.5rem;
   margin-bottom: 1rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -47,7 +47,7 @@
 }
 
 .coursework__badge {
-  width: 100px;
+  width: 80px; /* Adjusted for smaller screens */
   height: auto;
   border-radius: 0.5rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -55,7 +55,7 @@
 
 /* Title and Description */
 .coursework__item h4 {
-  font-size: 1.3rem;
+  font-size: 1.1rem; /* Reduced size for smaller screens */
   color: var(--color-primary);
   margin: 0.5rem 0;
 }
@@ -63,13 +63,15 @@
 .coursework__item p {
   color: var(--text-secondary);
   margin-bottom: 0.5rem;
+  font-size: 0.9rem; /* Adjusted font size for readability */
 }
 
 /* Link Button Styling */
 .coursework__links {
   display: flex;
-  justify-content: center;
-  gap: 1rem;
+  flex-direction: column; /* Stack buttons on smaller screens */
+  align-items: center;
+  gap: 0.8rem;
   margin-top: 1rem;
 }
 
@@ -84,99 +86,42 @@
   border-radius: 0.3rem;
   text-decoration: none;
   transition: background 0.3s;
+  font-size: 0.9rem; /* Adjusted font size for smaller screens */
 }
 
 .coursework__links a:hover {
   background-color: var(--color-primary-dark);
 }
-.coursework__container {
-  padding: 2rem;
-  margin: 0 auto;
-  max-width: 800px;
-  background: var(--color-bg-variant);
-  border-radius: 1rem;
-  text-align: center;
-}
 
-.coursework__container h3 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-  color: var(--color-primary);
-  font-size: 1.5rem;
-  margin-top: 1rem;
-  text-align: center;
-}
+/* Media Queries for iPhone 13 Pro Max (and other small screens) */
+@media screen and (max-width: 430px) {
+  .coursework__container {
+    padding: 1rem;
+  }
 
-/* List Styling */
-.coursework__list {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+  .coursework__item {
+    padding: 0.8rem;
+  }
 
-/* Individual Course Item */
-.coursework__item {
-  width: 100%;
-  background: var(--color-bg);
-  padding: 1.5rem;
-  border-radius: 0.5rem;
-  margin-bottom: 1rem;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  text-align: center;
-}
+  .coursework__badge {
+    width: 70px;
+  }
 
-/* Badge Image Styling */
-.coursework__badge-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 1rem;
-}
+  .coursework__item h4 {
+    font-size: 1rem;
+  }
 
-.coursework__badge {
-  width: 100px;
-  height: auto;
-  border-radius: 0.5rem;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
+  .coursework__item p {
+    font-size: 0.8rem;
+  }
 
-/* Title and Description */
-.coursework__item h4 {
-  font-size: 1.3rem;
-  color: var(--color-primary);
-  margin: 0.5rem 0;
-}
+  .coursework__links {
+    gap: 0.5rem;
+  }
 
-.coursework__item p {
-  color: var(--text-secondary);
-  margin-bottom: 0.5rem;
-}
-
-/* Link Button Styling */
-.coursework__links {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  margin-top: 1rem;
-}
-
-.coursework__links a,
-.coursework__item a.btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.3rem;
-  color: #fff;
-  background-color: var(--color-primary);
-  padding: 0.5rem 1rem;
-  border-radius: 0.3rem;
-  text-decoration: none;
-  transition: background 0.3s;
-}
-
-.coursework__links a:hover {
-  background-color: var(--color-primary-dark);
+  .coursework__links a,
+  .coursework__item a.btn {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.8rem;
+  }
 }

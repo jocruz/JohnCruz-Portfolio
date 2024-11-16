@@ -1,34 +1,49 @@
 /* Updated class names to avoid conflict */
 .profile-tabs {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 1.5rem;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap; /* Ensures tabs wrap on smaller screens */
+  gap: 0.5rem; /* Adds space between tabs for better layout */
+}
+
+.profile-tabs button {
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: var(--color-bg-variant);
+  color: var(--text-color);
+  cursor: pointer;
+  border-radius: 0.5rem;
+  margin: 0;
+  transition: background-color 0.3s;
+  font-size: 1rem; /* Adjusted font size for mobile */
+  max-width: 150px; /* Restricts button width for smaller screens */
+  text-align: center; /* Centers text within the button */
+}
+
+.profile-tabs button.active {
+  background-color: var(--color-primary);
+  color: #fff;
+}
+
+.profile-tabs button:hover {
+  background-color: var(--color-primary-light);
+}
+
+.profile-tab-content {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+/* Media Queries for iPhone 13 Pro Max (and other small screens) */
+@media screen and (max-width: 430px) {
+  .profile-tabs {
+    gap: 0.3rem; /* Slightly reduce gap for smaller screens */
   }
-  
+
   .profile-tabs button {
-    padding: 0.5rem 1rem;
-    border: none;
-    background-color: var(--color-bg-variant);
-    color: var(--text-color);
-    cursor: pointer;
-    border-radius: 0.5rem;
-    margin: 0 0.5rem;
-    transition: background-color 0.3s;
-    font-size: large;
+    font-size: 0.9rem; /* Further reduce font size */
+    padding: 0.4rem 0.8rem;
   }
-  
-  .profile-tabs button.active {
-    background-color: var(--color-primary);
-    color: #fff;
-  }
-  
-  .profile-tabs button:hover {
-    background-color: var(--color-primary-light);
-  }
-  
-  .profile-tab-content {
-    display: flex;
-    justify-content: center;
-    margin-top: 1rem;
-  }
-  
+}
