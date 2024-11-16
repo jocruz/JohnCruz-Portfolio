@@ -24,7 +24,7 @@ const Portfolio = () => {
           className={activeTab === "coursework" ? "active" : ""}
           onClick={() => setActiveTab("coursework")}
         >
-          Coursework
+          Cyber Security Coursework
         </button>
         <button
           className={activeTab === "professionalprojects" ? "active" : ""}
