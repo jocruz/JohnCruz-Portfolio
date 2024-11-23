@@ -17,11 +17,12 @@ const certifications = [
   },
   {
     id: 2,
-    title: 'Practical Junior Web Tester (PJWT)',
+    title: 'Practical Web Pentest Associate (PWPA)',
     issuer: 'TCM Security',
     date: 'Issued 07/03/2024',
     url: 'https://certified.tcm-sec.com/4a803568-86d5-4150-924f-9cc6173eff74?key=a2d2b570e775b4a2f78622e7443351b05e021fcc03edfc9961ad3456ae9a1f8a&record_view=true#acc.YxCUh6Fi',
-    description: 'Focused on hands-on penetration testing for web applications, including reconnaissance and exploitation.',
+    description: 'Focused on hands-on penetration testing for web applications, emphasizing the OWASP Top 10 vulnerabilities, including Broken Access Control, SQL Injections, Cross-Site Scripting (XSS), and Security Misconfiguration. Successfully conducted a web application penetration test, identified critical vulnerabilities, and wrote a detailed CVSS-compliant report with remediation steps. Demonstrated expertise in exploiting Authentication, Authorization, and Injection vulnerabilities.',
+
     logo: pjwtLogo, // Reference to the PJWT badge
   },
   {
@@ -30,12 +31,7 @@ const certifications = [
     issuer: 'TCM Security',
     date: 'Issued 10/15/2024',
     url: 'https://certified.tcm-sec.com/006bf430-1660-4ee2-adda-d5cda8608055?key=723d1af6dc8c0bf85589342089df6c945f6f917d16ce5a7ad7cfb69a0b84fd3f',
-    description: `This exam assessed the ability to perform an internal network penetration test at an associate level, including:
-      - Ethical hacking
-      - Penetration testing
-      - Active Directory exploitation
-      - Enumeration
-      - Information gathering`,
+    description: 'Assessed the ability to perform an internal network penetration test at an associate level, with a focus on ethical hacking, Active Directory exploitation, enumeration, and information gathering. Successfully led an internal penetration test, leveraging skills in lateral and vertical network movement to identify critical vulnerabilities. Delivered a detailed professional report outlining findings, CVSS scoring, and remediation steps, showcasing expertise in internal network security assessment and exploitation.',
     logo: pjptLogo, // Reference to the PJPT badge
   },
 ];
