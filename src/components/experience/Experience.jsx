@@ -92,14 +92,14 @@ const Experience = () => {
               <BsPatchCheckFill className="experience__details-icon" />
               <div>
                 <h4>Windows / Mac OS</h4>
-                <small className="text-light">2+ years in giving Tech support</small>
+                <small className="text-light">Experience in Internal Network Pen Testing. 2+ years in giving Tech support</small>
               </div>
             </article>
             <article className="experience__details">
               <BsPatchCheckFill className="experience__details-icon" />
               <div>
                 <h4>Web Application Pen Testing</h4>
-                <small className="text-light">Utilized OWASP Top 10, SQL Injections, XSS, Command Injections etc..</small>
+                <small className="text-light">Utilized OWASP Top 10, SQL Injections, XSS, Command Injections etc. Proficient in using Burp Suite</small>
               </div>
             </article>
             <article className="experience__details">

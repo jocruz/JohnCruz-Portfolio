@@ -1,15 +1,16 @@
 import React from "react";
 import "./about.css";
 import ME from "../../assets/me-about.jpg";
-import { FaAward } from "react-icons/fa";
-import { FiUsers } from "react-icons/fi";
-import { VscFolderLibrary } from "react-icons/vsc";
+import { FaAward } from "react-icons/fa"; // Experience
+import { VscShield } from "react-icons/vsc"; // Web App Pen Tester (Security)
+import { VscFolderLibrary } from "react-icons/vsc"; // Projects (Web 3 & Cybersecurity)
+
 
 const About = () => {
   return (
     <section id="about">
-      <h5>Let Me Share Something... </h5>
-      <h2>About Me </h2>
+      <h5>Let Me Share Something...</h5>
+      <h2>About Me</h2>
 
       <div className="container about__container">
         <div className="about__me">
@@ -19,60 +20,40 @@ const About = () => {
         </div>
 
         <div className="about__content">
-          <div className="about__cards">
-            <article className="about__card">
-              <FaAward className="about__icon"></FaAward>
-              <h5>Experience </h5>
-              <small>7+ years Working</small>
-            </article>
+  <div className="about__cards">
+    <article className="about__card">
+      <FaAward className="about__icon" />
+      <h5>Experience</h5>
+      <small>7+ Years in Tech</small>
+    </article>
 
-            <article className="about__card">
-              <FiUsers className="about__icon"></FiUsers>
-              <h5> Clients </h5>
-              <small>WorldWide!</small>
-            </article>
+    <article className="about__card">
+      <VscShield className="about__icon" />
+      <h5>Web App Pen Tester</h5>
+      <small>TCM Certified - PWPP, PWPA, PJPT</small>
+    </article>
 
-            <article className="about__card">
-              <VscFolderLibrary className="about__icon"></VscFolderLibrary>
-              <h5>Projects </h5>
-              <small>Web 3 based and Mentoring</small>
-            </article>
-          </div>
+    <article className="about__card">
+      <VscFolderLibrary className="about__icon" />
+      <h5>Projects</h5>
+      <small>Web 3 & Cybersecurity</small>
+    </article>
+  </div>
 
-          <p>
-            🚀 About Me Hello! I'm John, a dynamic freelance software developer
-            and security enthusiast from Brooklyn, NYC. Graduated from Stony
-            Brook University in Information Systems Engineering, I've dived deep
-            into the realms of Web 3 and cybersecurity. As a tech wizard, I'm
-            currently channeling my skills into freelance projects with Moverz a
-            start up based in Long Island, sculpting the future of the internet
-            one Web 3 DApp at a time. My journey has spanned roles from
-            full-stack development to Technical Analysis to Tech Support and
-            more! I am driven by a passion to bridge the evolving digital
-            landscapes of Web 2 and Web 3.
-          </p>
-          <p>
-            🌟 Here’s a more concise and professional revision of your updated
-            text: I have successfully earned my Sec+ 701 and TCM Security PJWT
-            (Practical Junior Web Tester) certifications and am currently
-            pursuing the TCM Security PJPT (Practical Junior Penetration
-            Tester), which emphasizes Active Directory network penetration
-            testing. My long-term goal is to achieve the TCM Security PWPT
-            (Practical Web Penetration Tester) certification to deepen my
-            expertise in web application penetration testing, aligning with my
-            niche in cybersecurity.
-          </p>
 
-          <p>
-            🏄In this portfolio, I showcase my TCM Security certifications and
-            coursework, which form the foundation of my cybersecurity training.
-            I also highlight my paid Web 3 projects, completed through Moverz
-            Media, which collectively generated over $100,000 in revenue for
-            clients. Additionally, I include my Java projects, developed during
-            my academic journey to enhance my understanding of data structures
-            and algorithms, as well as my React projects, which demonstrate my
-            front-end development expertise.
-          </p>
+  <p>
+  I'm John, a <strong>full-stack web application developer</strong> specializing in <strong>Web 3 Ethereum-based applications</strong> and <strong>Web 2 development</strong>. With a degree in <strong>Information Systems Engineering</strong> from Stony Brook University, I have extensive experience in building and Pen Testing modern applications. My work bridges <strong>decentralized technologies with scalable web solutions</strong>, ensuring both innovation and security.
+</p>
+
+<p>
+  Currently, I focus on <strong>web application security and penetration testing</strong>. As a <strong>TCM Security-certified Web App Pen Tester</strong>, I hold the <strong>PWPP, PWPA, PJPT,</strong> and <strong>CompTIA Security+ 701</strong> certifications. I specialize in <strong>black-box web application testing</strong>, identifying vulnerabilities, and strengthening security in real-world applications.
+</p>
+
+<p>
+  This portfolio highlights my expertise in <strong>full-stack Web 3 and Web 2 development</strong>, along with my work in <strong>cybersecurity</strong>. It includes <strong>Ethereum-based projects</strong> developed through <strong>Moverz Media</strong> (generating <strong>$100K+ in revenue</strong>), as well as <strong>web application security projects, Java-based algorithms,</strong> and <strong>React front-end applications</strong>.
+</p>
+
+
         </div>
       </div>
     </section>
