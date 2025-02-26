@@ -1,0 +1,10 @@
+{
+    "redirects": [
+      {
+        "source": "/appsec",
+        "destination": "https://johns-organization-145.gitbook.io/knowledge-base",
+        "permanent": true
+      }
+    ]
+  }
+  
