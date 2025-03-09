@@ -24,7 +24,7 @@ const data = [
       id: 2,
       image: IMG1,
       title: "TikiToken ETH Decentralized Application - Web 3 Developer",
-      demo: "https://tikitoken.io/",
+      demo: "https://moverzgroup.com/campaign/tikitoken/",
       date: "Launched June 1, 2022",
       technologies: ["React JS", "TypeScript", "NextJS", "Vercel", "ThirdwebSDK", "Stripe API/Webhook", "Dynamic Wallet"],
       metrics: "Generated over $100,000 in sales, served over 1,000 users",
