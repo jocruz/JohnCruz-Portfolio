@@ -1,33 +1,49 @@
+/* Global Variables */
+:root {
+  --color-bg: #ffffff;
+  --color-bg-variant: #f4f4f4;
+  --color-primary: #007acc;
+  --color-primary-light: #3399ff;
+  --color-primary-variant: #005f99;
+  --text-secondary: #FAF9F6;
+  --font-family: 'Roboto', sans-serif;
+  --transition: all 0.3s ease;
+}
+
 /* Portfolio Container */
 .portfolio__container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2.5rem;
-  padding: 1rem;
+  padding: 2rem;
 }
 
-/* Portfolio Items */
+/* Portfolio Items (Card Layout) */
 .portfolio__item {
   background: var(--color-bg-variant);
-  padding: 1.2rem;
+  padding: 1.5rem;
   border-radius: 2rem;
   border: 1px solid transparent;
   transition: var(--transition);
   text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .portfolio__item:hover {
   border-color: var(--color-primary-variant);
-  background: transparent;
+  background: var(--color-bg);
   transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
 }
 
+/* Portfolio Item Image */
 .portfolio__item-image {
   border-radius: 1.5rem;
   overflow: hidden;
   margin-bottom: 1rem;
 }
 
+/* Titles and Text */
 .portfolio__item h3 {
   font-size: 1.3rem;
   margin-top: 1rem;
@@ -44,6 +60,7 @@
   font-weight: bold;
 }
 
+/* Call-to-Action Section */
 .portfolio__item-cta {
   display: flex;
   gap: 1rem;
@@ -70,171 +87,16 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-bottom: 1.5rem;
   gap: 0.5rem;
   padding: 0 1rem;
+  margin-bottom: 1rem; /* Reduced bottom margin */
 }
 
 .tabs button {
   padding: 0.5rem 1rem;
   border: none;
   background-color: var(--color-bg-variant);
-  color: var(--text-color);
-  cursor: pointer;
-  border-radius: 0.5rem;
-  font-size: 1rem;
-  white-space: nowrap;
-  transition: background-color 0.3s;
-}
-
-.tabs button.active {
-  background-color: var(--color-primary);
-  color: #fff;
-}
-
-.tabs button:hover {
-  background-color: var(--color-primary-light);
-}
-
-/* Tab Content */
-.tab-content {
-  display: flex;
-  justify-content: center;
-  margin-top: 1rem;
-}
-
-/* Responsive Design */
-
-/* Medium Devices */
-@media screen and (max-width: 1024px) {
-  .portfolio__container {
-    grid-template-columns: 1fr 1fr;
-    gap: 1.5rem;
-  }
-
-  .tabs button {
-    font-size: 0.9rem;
-  }
-}
-
-/* Small Devices (Mobile) */
-@media screen and (max-width: 600px) {
-  .portfolio__container {
-    grid-template-columns: 1fr;
-    gap: 1rem;
-  }
-
-  .portfolio__item {
-    padding: 1rem;
-  }
-
-  .portfolio__item h3 {
-    font-size: 1.1rem;
-  }
-
-  .portfolio__item p {
-    font-size: 0.9rem;
-  }
-
-  .tabs {
-    flex-direction: column;
-    align-items: center;
-    gap: 0.8rem;
-  }
-
-  .tabs button {
-    width: 100%;
-    text-align: center;
-    font-size: 0.9rem;
-    padding: 0.5rem;
-  }
-
-  .portfolio__item-cta .btn {
-    font-size: 0.85rem;
-  }
-}
-/* Portfolio Container */
-.portfolio__container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2.5rem;
-  padding: 1rem;
-}
-
-/* Portfolio Items */
-.portfolio__item {
-  background: var(--color-bg-variant);
-  padding: 1.2rem;
-  border-radius: 2rem;
-  border: 1px solid transparent;
-  transition: var(--transition);
-  text-align: center;
-}
-
-.portfolio__item:hover {
-  border-color: var(--color-primary-variant);
-  background: transparent;
-  transform: translateY(-5px);
-}
-
-.portfolio__item-image {
-  border-radius: 1.5rem;
-  overflow: hidden;
-  margin-bottom: 1rem;
-}
-
-.portfolio__item h3 {
-  font-size: 1.3rem;
-  margin-top: 1rem;
-  color: var(--color-primary);
-}
-
-.portfolio__item p {
-  margin: 0.5rem 0;
   color: var(--text-secondary);
-}
-
-.portfolio__item p strong {
-  color: var(--color-primary);
-  font-weight: bold;
-}
-
-.portfolio__item-cta {
-  display: flex;
-  gap: 1rem;
-  justify-content: center;
-  margin-top: 1rem;
-}
-
-.portfolio__item-cta .btn {
-  padding: 0.5rem 1rem;
-  font-size: 0.9rem;
-  border-radius: 5px;
-  background-color: var(--color-primary);
-  color: #fff;
-  text-decoration: none;
-  transition: background-color 0.3s;
-}
-
-.portfolio__item-cta .btn:hover {
-  background-color: var(--color-primary-light);
-}
-
-/* Tabs Section */
-.tabs {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-bottom: 1.5rem;
-  gap: 0.5rem;
-  padding: 0 1rem;
-}
-
-.tabs button {
-  padding: 0.5rem 1rem;
-  border: none;
-  background-color: var(--color-bg-variant);
-  color: var(--text-color);
   cursor: pointer;
   border-radius: 0.5rem;
   font-size: 1rem;
@@ -255,7 +117,7 @@
 .tab-content {
   display: flex;
   justify-content: center;
-  margin-top: 1rem;
+  margin: 1rem auto; /* Reduced top/bottom margin */
 }
 
 /* Responsive Design */

@@ -52,7 +52,11 @@ const JavaProjects = () => {
       <h5>My College Projects</h5>
       <h2>Java Projects Portfolio</h2>
       <p className="java-portfolio-description">
-        This collection showcases Java programs I developed. These projects were designed to strengthen my understanding of object-oriented programming (OOP), data structures, and algorithms. Each project highlights specific problem-solving techniques and real-world applications, emphasizing the fundamentals of computer science.
+        This collection showcases Java programs I developed. These projects were
+        designed to strengthen my understanding of object-oriented programming
+        (OOP), data structures, and algorithms. Each project highlights specific
+        problem-solving techniques and real-world applications, emphasizing the
+        fundamentals of computer science.
       </p>
       <div className="java__container">
         {data.map(({ id, title, description, github }) => (

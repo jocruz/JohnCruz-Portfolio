@@ -5,120 +5,66 @@ import { BsPatchCheckFill } from "react-icons/bs";
 const Experience = () => {
   return (
     <section id="experience">
-      <h5>Take A Look At My...</h5>
-      <h2>Skills</h2>
-
-      <div className="container experience__container">
-        <div className="experience__frontend">
+      <h5>My Skills</h5>
+      <h2>Experience</h2>
+      <div className="experience__container">
+        <div className="experience__group">
           <h3>Full Stack Development</h3>
-          <div className="experience__content">
-            <article className="experience__details">
-              <BsPatchCheckFill className="experience__details-icon" />
-              <div>
-                <h4>HTML/CSS</h4>
-                <small className="text-light">
-                  Skilled with project-based experience
-                </small>
-              </div>
-            </article>
-            <article className="experience__details">
-              <BsPatchCheckFill className="experience__details-icon" />
-              <div>
-                <h4>Next JS</h4>
-                <small className="text-light">
-                  Proficient from practical application & Freelance projects
-                </small>
-              </div>
-            </article>
-            <article className="experience__details">
-              <BsPatchCheckFill className="experience__details-icon" />
-              <div>
-                <h4>JavaScript</h4>
-                <small className="text-light">
-                  Experienced through self-directed & Freelance projects
-                </small>
-              </div>
-            </article>
-            <article className="experience__details">
-              <BsPatchCheckFill className="experience__details-icon" />
-              <div>
-                <h4>Solidity</h4>
-                <small className="text-light">
-                  Practical experience in startup environments
-                </small>
-              </div>
-            </article>
-            <article className="experience__details">
-              <BsPatchCheckFill className="experience__details-icon" />
-              <div>
-                <h4>Java</h4>
-                <small className="text-light">
-                  University focused projects, and taught University Classes
-                </small>
-              </div>
-            </article>
-            <article className="experience__details">
-              <BsPatchCheckFill className="experience__details-icon" />
-              <div>
-                <h4>React</h4>
-                <small className="text-light">
-                  Skilled from independent learning and projects
-                </small>
-              </div>
-            </article>
-          </div>
+          <ul className="experience__list">
+            <li>
+              <BsPatchCheckFill className="experience__icon" />
+              <span>HTML/CSS</span>
+            </li>
+            <li>
+              <BsPatchCheckFill className="experience__icon" />
+              <span>Next JS</span>
+            </li>
+            <li>
+              <BsPatchCheckFill className="experience__icon" />
+              <span>JavaScript</span>
+            </li>
+            <li>
+              <BsPatchCheckFill className="experience__icon" />
+              <span>Solidity</span>
+            </li>
+            <li>
+              <BsPatchCheckFill className="experience__icon" />
+              <span>Java</span>
+            </li>
+            <li>
+              <BsPatchCheckFill className="experience__icon" />
+              <span>React</span>
+            </li>
+          </ul>
         </div>
-
-        {/* END OF FRONTEND */}
-
-        <div className="experience__backend">
+        <div className="experience__group">
           <h3>Tech Engineer</h3>
-          <div className="experience__content">
-            <article className="experience__details">
-              <BsPatchCheckFill className="experience__details-icon" />
-              <div>
-                <h4>Python</h4>
-                <small className="text-light">Utilized Scripting for Cyber Security & Kali Linux</small>
-              </div>
-            </article>
-            <article className="experience__details">
-              <BsPatchCheckFill className="experience__details-icon" />
-              <div>
-                <h4>Project Manager</h4>
-                <small className="text-light">Managed Projects for Clients focused on Web 3</small>
-              </div>
-            </article>
-            <article className="experience__details">
-              <BsPatchCheckFill className="experience__details-icon" />
-              <div>
-                <h4>Windows / Mac OS</h4>
-                <small className="text-light">Experience in Internal Network Pen Testing. 2+ years in giving Tech support</small>
-              </div>
-            </article>
-            <article className="experience__details">
-              <BsPatchCheckFill className="experience__details-icon" />
-              <div>
-                <h4>Web Application Pen Testing</h4>
-                <small className="text-light">Utilized OWASP Top 10, SQL Injections, XSS, Command Injections etc. Proficient in using Burp Suite</small>
-              </div>
-            </article>
-            <article className="experience__details">
-              <BsPatchCheckFill className="experience__details-icon" />
-              <div>
-                <h4>Linux</h4>
-                <small className="text-light">Experience in Kali Linux & Ubuntu</small>
-              </div>
-            </article>
-            <article className="experience__details">
-              <BsPatchCheckFill className="experience__details-icon" />
-              <div>
-                <h4>Customer Techicnal Support</h4>
-                <small className="text-light">
-                  4+ experience giving amazing support to all types of clients and customers
-                </small>
-              </div>
-            </article>
-          </div>
+          <ul className="experience__list">
+            <li>
+              <BsPatchCheckFill className="experience__icon" />
+              <span>OWASP Top 10</span>
+            </li>
+            <li>
+              <BsPatchCheckFill className="experience__icon" />
+              <span>Black Box Web App Testing</span>
+            </li>
+            <li>
+              <BsPatchCheckFill className="experience__icon" />
+              <span>Windows / Mac OS</span>
+            </li>
+            <li>
+              <BsPatchCheckFill className="experience__icon" />
+              <span>Web App Pen Testing</span>
+            </li>
+            <li>
+              <BsPatchCheckFill className="experience__icon" />
+              <span>Linux</span>
+            </li>
+            <li>
+              <BsPatchCheckFill className="experience__icon" />
+              <span>Customer Support</span>
+            </li>
+          </ul>
         </div>
       </div>
     </section>

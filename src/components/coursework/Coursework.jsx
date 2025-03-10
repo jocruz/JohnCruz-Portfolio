@@ -23,9 +23,7 @@ const courses = [
     issuer: 'TCM Security',
     date: 'Completed 01/14/2025',
     pdf: pwhCert,
-    description: 
-      'Advanced web application security training covering Web Sockets, NoSQL, Race Conditions, Open Redirect, authentication attacks, broken access control, SQL injection, ' +
-      'SSRF, XSS, JWT attacks, and real-world web exploitation techniques.',
+    description: 'Advanced web application security training covering Web Sockets, NoSQL, Race Conditions, Open Redirect, authentication attacks, broken access control, SQL injection, SSRF, XSS, JWT attacks, and real-world web exploitation techniques.',
     logo: pwh,
     github: 'https://github.com/jocruz/Practical-Web-Hacking-Notes',
     website: 'https://academy.tcm-sec.com/p/practical-web-hacking',
@@ -36,9 +34,7 @@ const courses = [
     issuer: 'TCM Security',
     date: 'Completed 01/17/2025',
     pdf: pahCert,
-    description: 
-      'Focused on API security, covering enumeration, BOLA & BFLA attacks, JWT manipulation, SQL/NoSQL injection, ' +
-      'SSRF, mass assignment, and chaining vulnerabilities for complete API exploitation.',
+    description: 'Focused on API security, covering enumeration, BOLA & BFLA attacks, JWT manipulation, SQL/NoSQL injection, SSRF, mass assignment, and chaining vulnerabilities for complete API exploitation.',
     logo: pah,
     github: 'https://github.com/jocruz/Practical-API-Hacking',
     website: 'https://academy.tcm-sec.com/p/hacking-apis',
@@ -82,35 +78,35 @@ const Coursework = () => {
   return (
     <div className="coursework__container">
       <h3><FaBook /> Coursework</h3>
-      <ul className="coursework__list">
-        {courses.map(({ id, title, issuer, date, pdf, description, logo, github, website }) => (
-          <li key={id} className="coursework__item">
+      <div className="coursework__grid">
+        {courses.map(course => (
+          <div key={course.id} className="coursework__card">
             <div className="coursework__badge-container">
-              <img src={logo} alt={`${title} logo`} className="coursework__badge" />
+              <img src={course.logo} alt={`${course.title} logo`} className="coursework__badge" />
             </div>
-            <h4>{title}</h4>
-            <p>{issuer} - {date}</p>
-            <p>{description}</p>
+            <h4>{course.title}</h4>
+            <p className="coursework__issuer">{course.issuer} - {course.date}</p>
+            <p className="coursework__description">{course.description}</p>
             <div className="coursework__links">
-              {github && (
-                <a href={github} target="_blank" rel="noopener noreferrer">
-                  GitHub Repo <FaGithub />
+              {course.github && (
+                <a href={course.github} target="_blank" rel="noopener noreferrer">
+                  GitHub <FaGithub />
                 </a>
               )}
-              {website && (
-                <a href={website} target="_blank" rel="noopener noreferrer">
+              {course.website && (
+                <a href={course.website} target="_blank" rel="noopener noreferrer">
                   Course Page <FaExternalLinkAlt />
                 </a>
               )}
-              {pdf && (
-                <a href={pdf} target="_blank" rel="noopener noreferrer" className="btn">
+              {course.pdf && (
+                <a href={course.pdf} target="_blank" rel="noopener noreferrer" className="btn">
                   Download Certificate <FaFilePdf />
                 </a>
               )}
             </div>
-          </li>
+          </div>
         ))}
-      </ul>
+      </div>
     </div>
   );
 };

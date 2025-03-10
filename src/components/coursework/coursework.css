@@ -1,10 +1,21 @@
+/* Root Variables */
+:root {
+  --color-bg: #ffffff;
+  --color-bg-variant: #f4f4f4;
+  --color-primary: #007acc;
+  --color-primary-dark: #005f99;
+  --text-secondary: #FAF9F6;
+  --font-family: 'Roboto', sans-serif;
+}
+
 .coursework__container {
-  padding: 1.5rem; /* Reduced padding for smaller screens */
+  padding: 2rem;
   margin: 0 auto;
-  max-width: 95%; /* Ensures the container fits smaller screens */
+  max-width: 1200px;
   background: var(--color-bg-variant);
   border-radius: 1rem;
   text-align: center;
+  font-family: var(--font-family);
 }
 
 .coursework__container h3 {
@@ -13,70 +24,72 @@
   justify-content: center;
   gap: 0.5rem;
   color: var(--color-primary);
-  font-size: 1.3rem; /* Adjusted font size for better readability */
-  margin-top: 1rem;
-  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
-/* List Styling */
-.coursework__list {
-  list-style: none;
+/* Grid Layout for Cards */
+.coursework__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
   padding: 0;
+}
+
+/* Card Styling */
+.coursework__card {
+  background: var(--color-bg);
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: left;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: space-between;
 }
 
-/* Individual Course Item */
-.coursework__item {
-  width: 100%;
-  background: var(--color-bg);
-  padding: 1rem; /* Reduced padding */
-  border-radius: 0.5rem;
-  margin-bottom: 1rem;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  text-align: center;
+.coursework__card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
 }
 
-/* Badge Image Styling */
+/* Badge Styling */
 .coursework__badge-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
   margin-bottom: 1rem;
 }
 
 .coursework__badge {
-  width: 80px; /* Adjusted for smaller screens */
+  width: 80px;
   height: auto;
   border-radius: 0.5rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Title and Description */
-.coursework__item h4 {
-  font-size: 1.1rem; /* Reduced size for smaller screens */
+/* Title and Text Styling */
+.coursework__card h4 {
+  font-size: 1.3rem;
   color: var(--color-primary);
   margin: 0.5rem 0;
 }
 
-.coursework__item p {
+.coursework__issuer,
+.coursework__description {
+  font-size: 1rem;
   color: var(--text-secondary);
-  margin-bottom: 0.5rem;
-  font-size: 0.9rem; /* Adjusted font size for readability */
+  margin-bottom: 1rem;
 }
 
-/* Link Button Styling */
+/* Link Styling */
 .coursework__links {
   display: flex;
-  flex-direction: column; /* Stack buttons on smaller screens */
-  align-items: center;
+  flex-wrap: wrap;
   gap: 0.8rem;
-  margin-top: 1rem;
 }
 
 .coursework__links a,
-.coursework__item a.btn {
+.coursework__links a.btn {
   display: inline-flex;
   align-items: center;
   gap: 0.3rem;
@@ -86,41 +99,34 @@
   border-radius: 0.3rem;
   text-decoration: none;
   transition: background 0.3s;
-  font-size: 0.9rem; /* Adjusted font size for smaller screens */
+  font-size: 0.9rem;
 }
 
 .coursework__links a:hover {
   background-color: var(--color-primary-dark);
 }
 
-/* Media Queries for iPhone 13 Pro Max (and other small screens) */
+/* Responsive Adjustments */
 @media screen and (max-width: 430px) {
   .coursework__container {
     padding: 1rem;
-  }
-
-  .coursework__item {
-    padding: 0.8rem;
   }
 
   .coursework__badge {
     width: 70px;
   }
 
-  .coursework__item h4 {
-    font-size: 1rem;
+  .coursework__card h4 {
+    font-size: 1.1rem;
   }
 
-  .coursework__item p {
-    font-size: 0.8rem;
-  }
-
-  .coursework__links {
-    gap: 0.5rem;
+  .coursework__issuer,
+  .coursework__description {
+    font-size: 0.9rem;
   }
 
   .coursework__links a,
-  .coursework__item a.btn {
+  .coursework__links a.btn {
     padding: 0.4rem 0.8rem;
     font-size: 0.8rem;
   }
